@@ -52,6 +52,7 @@ p.navbar-text{
 .counter-text{
     font-size: 150px;
     font-family: 'Roboto';
+    font-weight: 300;
     padding-top: 150px;
     color: white;
 }

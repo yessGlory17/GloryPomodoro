@@ -38,6 +38,11 @@ p.navbar-text{
     height: 70px;
     /* border:1px solid red; */
     float: right;
+    
+}
+.settings-icon{
+    float: right;
+    cursor: pointer;
 }
 
 .main{

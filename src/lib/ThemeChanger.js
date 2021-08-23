@@ -2,12 +2,14 @@
 class ThemeChanger {
 
     static loadTheme() {
-        document.getElementById("main").style.backgroundColor = this.getTheme()["background"];
+        //alert(this.getTheme()["background"]);
+        document.body.style.backgroundColor = this.getTheme();
     }
 
     static setTheme(theme) {
         localStorage.setItem("theme", JSON.stringify(theme));
-        document.getElementById("main").style.backgroundColor = this.getTheme()["background"];
+        document.body.style.backgroundColor = this.getTheme()["background"];
+        location.reload();
     }
 
     static getTheme() {

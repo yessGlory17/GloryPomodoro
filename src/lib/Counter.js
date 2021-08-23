@@ -39,7 +39,9 @@ export function counter() {
                 seconds = 59;
                 counter.textContent = minute + ":" + seconds;
             } else if (seconds > 0) {
+
                 seconds--;
+                if (seconds < 10) seconds = "0" + seconds;
             } else {
                 seconds = 0;
             }

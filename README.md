@@ -12,4 +12,4 @@
 
 - [ ] Themes
 
-- [ ] 
+- [ ] Play Music

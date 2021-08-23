@@ -23,6 +23,9 @@ export function inputControl() {
 
 export function counter() {
     let startButton = document.getElementById("start-button");
+    let alarmSound = document.getElementById("alarm-sound");
+    const audioContext = new AudioContext();
+    const source = audioContext.createMediaElementSource(alarmSound);
     startButton.addEventListener('click', () => {
         //alert()
         //ThemeChanger.setTheme(ThemeList.Parliament);
@@ -33,6 +36,10 @@ export function counter() {
 
         //if (minute => 60) minute = 59;
         var pomodoro = setInterval(() => {
+
+
+
+            source.connect(audioContext.destination)
 
             if (seconds == 0) {
                 minute--;
@@ -47,7 +54,15 @@ export function counter() {
             }
 
             if (minute == 0 && seconds == 0) {
-                alert("Pomodoro Bitti");
+                //alert("Pomodoro Bitti");
+                alarmSound.play();
+
+                setTimeout(() => {
+                    if (confirm("Pomodoro is Finished!")) {
+                        alarmSound.pause();
+                    }
+                }, 3000)
+
                 clearInterval(pomodoro);
             }
 
@@ -57,5 +72,5 @@ export function counter() {
             counter.textContent = currentTime;
 
         }, 1000)
-    })
+    });
 }

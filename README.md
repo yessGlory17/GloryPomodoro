@@ -6,21 +6,21 @@
 
 #### Themes v 0.1.3
 
-![](screenshoots\s1.PNG)
+![](https://github.com/yessGlory17/GloryPomodoro/blob/master/screenshoots/s1.PNG)
 
-![](screenshoots\s2.PNG)
+![](https://github.com/yessGlory17/GloryPomodoro/blob/master/screenshoots/s2.PNG)
 
-![](screenshoots\s3.PNG)
+![](https://github.com/yessGlory17/GloryPomodoro/blob/master/screenshoots/s3.PNG)
 
-![](screenshoots\s4.PNG)
+![](https://github.com/yessGlory17/GloryPomodoro/blob/master/screenshoots/s4.PNG)
 
-![](screenshoots\s5.PNG)
+![](https://github.com/yessGlory17/GloryPomodoro/blob/master/screenshoots/s5.PNG)
 
 
 
 #### Themes Settings
 
-![](screenshoots\s6.PNG)
+![](https://github.com/yessGlory17/GloryPomodoro/blob/master/screenshoots/s6.PNG)
 
 ## Task List
 

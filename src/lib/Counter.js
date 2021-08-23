@@ -23,19 +23,23 @@ export function inputControl() {
 
 export function counter() {
     let startButton = document.getElementById("start-button");
+    let stopButton = document.getElementById("stop-button");
     let alarmSound = document.getElementById("alarm-sound");
     const audioContext = new AudioContext();
     const source = audioContext.createMediaElementSource(alarmSound);
+    let pomodoro = null;
     startButton.addEventListener('click', () => {
         //alert()
         //ThemeChanger.setTheme(ThemeList.Parliament);
+        stopButton.style.display = "block";
+        startButton.style.display = "none";
         let counter = document.getElementById("counter");
         let time = counter.textContent.split(":");
         let minute = time[0];
         let seconds = time[1];
 
         //if (minute => 60) minute = 59;
-        var pomodoro = setInterval(() => {
+        pomodoro = setInterval(() => {
 
 
 
@@ -72,5 +76,14 @@ export function counter() {
             counter.textContent = currentTime;
 
         }, 1000)
+    });
+
+    stopButton.addEventListener('click', () => {
+
+        stopButton.style.display = "none";
+        startButton.style.display = "block";
+
+        clearInterval(pomodoro);
+
     });
 }

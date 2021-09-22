@@ -35,3 +35,5 @@
 - [ ] Play Music ( Target Date: 10 Agust 2021)
 
 - [ ] Stats
+
+- [ ] Focus Mode 
